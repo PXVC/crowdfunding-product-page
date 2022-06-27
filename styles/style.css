@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  background: hsl(0deg, 0%, 98%) url("../images/image-hero-desktop.jpg") no-repeat top/cover;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 3.3% 11.5%;
+}
+.header ul {
+  color: hsl(0deg, 0%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 21.3%;
+       column-gap: 21.3%;
+  list-style-type: none;
+}
+.header ul li {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  text-transform: capitalize;
+  font-size: 1.26rem;
+  font-weight: 400;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__sections {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  width: 710px;
+  padding: 40px;
+  margin-top: 2rem;
+}
+.main__header {
+  position: relative;
+  text-align: center;
+}
+.main__header > img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.main__header h1 {
+  font-size: 2.8rem;
+}
+.main__header p {
+  font-size: 1.5rem;
+}
+.main__header .main__btn-group {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.main__header .main__btn-group a {
+  font-weight: 700;
+  font-size: 1.7rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.main__header .main__btn-group a:focus {
+  outline: 3px solid hsl(0deg, 0%, 0%);
+}
+.main__header .main__btn-group a:first-child {
+  background-color: hsl(176deg, 50%, 47%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 15px 40px;
+}
+.main__header .main__btn-group a:first-child:hover {
+  background-color: hsl(176deg, 72%, 28%);
+}
+.main__header .main__btn-group a:first-child:focus {
+  background-color: hsl(176deg, 72%, 28%);
+}
+.main__header .main__btn-group a:last-child {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 48%);
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-height: 56px;
+  width: 27%;
+}
+.main__header .main__btn-group a:last-child img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.main__header .main__btn-group a:last-child:hover {
+  opacity: 0.8;
+}
+.main__header .main__btn-group a:last-child.bookmarked {
+  color: hsl(176deg, 72%, 28%);
+  font-size: 1.5rem;
+}
+.main__process-section .breadcrumb {
+  display: flex;
+  list-style-type: none;
+}
+.main__process-section .breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+.main__process-section .breadcrumb-item:not(:first-child) {
+  width: 225.734px;
+}
+.main__process-section .breadcrumb-item:not(:first-child)::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: hsl(0deg, 0%, 98%);
+  margin-inline: 4rem;
+}
+.main__process-section .breadcrumb-item h1 {
+  font-size: 3.3rem;
+}
+.main__process-section .breadcrumb-item p {
+  font-size: 1.5rem;
+}
+.main__process-section .process-bar {
+  width: 100%;
+  height: 10px;
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.main__process-section .process-bar .filled-part {
+  background-color: hsl(176deg, 50%, 47%);
+  display: inline-block;
+  height: 100%;
+  width: 75%;
+  border-radius: inherit;
+}/*# sourceMappingURL=style.css.map */
