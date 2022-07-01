@@ -13,6 +13,7 @@ body {
   background: hsl(0deg, 0%, 98%) url("../images/image-hero-desktop.jpg") no-repeat top/cover;
 }
 
+/* Header */
 .header {
   display: flex;
   align-items: flex-end;
@@ -37,14 +38,18 @@ body {
   font-weight: 400;
 }
 
+/* Main */
 .main {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* Main header */
+  /* Main process section */
+  /* Main about section */
 }
 .main__sections {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: hsl(0deg, 0%, 100%);
   border-radius: 1rem;
   width: 710px;
   padding: 40px;
@@ -154,4 +159,55 @@ body {
   height: 100%;
   width: 75%;
   border-radius: inherit;
+}
+.main__about-section > :not(:first-child) {
+  margin-top: 30px;
+}
+.main__about-section h2 {
+  font-size: 2.1rem;
+}
+.main__about-section p {
+  font-size: 1.5rem;
+}
+.main__about-section .product {
+  border: 1px solid hsl(0deg, 0%, 98%);
+  padding: 3.5rem 3rem;
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main__about-section .product__header, .main__about-section .product__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__about-section .product__header * {
+  font-size: 1.8rem;
+}
+.main__about-section .product__header a {
+  text-decoration: none;
+  color: hsl(176deg, 50%, 47%);
+}
+.main__about-section .product__footer h1 {
+  font-size: 3.3rem;
+  display: flex;
+  align-items: center;
+}
+.main__about-section .product__footer span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.main__about-section .product__footer a {
+  background-color: hsl(176deg, 50%, 47%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 15px 40px;
+  border-radius: 99px;
+  cursor: pointer;
+}
+.main__about-section .product__footer a:hover {
+  background-color: hsl(176deg, 72%, 28%);
+}
+.main__about-section .product__footer a.disable {
+  background-color: hsl(0deg, 0%, 48%);
 }/*# sourceMappingURL=style.css.map */
