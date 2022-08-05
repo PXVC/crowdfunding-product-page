@@ -11,5 +11,5 @@ html {
 body {
 	font-family: "Commissioner", sans-serif;
 	background: $body-bg url("../images/image-hero-desktop.jpg") no-repeat top /
-		cover;
+		100% fixed;
 }
