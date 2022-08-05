@@ -75,4 +75,11 @@ lightboxComplete.querySelector("button").addEventListener("click", () => {
 	toggleLightbox("show", "hidden");
 	lightboxComplete.classList.remove("show");
 	lightboxComplete.classList.add("hidden");
+
+	formGroups.forEach((group) => {
+		group.classList.remove("selected");
+		group.querySelector(".form-group__footer").classList.remove("show");
+	});
+
+	localStorage.removeItem("selected");
 });
